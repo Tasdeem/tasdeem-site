@@ -1,337 +1,80 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TASDEEM | ESG Assurance & Sustainability Advisory</title>
+    <title>TASDEEM | Clarity in complexity. Impact that endures.</title>
     
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=2">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=2">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=2">
-    <link rel="shortcut icon" href="favicon.ico?v=2">
-
-    <!-- Social Media Sharing Cards (Open Graph) -->
-    <meta property="og:title" content="TASDEEM | ESG Assurance & Sustainability Advisory">
-    <meta property="og:description" content="ESG software gives you a dashboard. I build what makes it defensible.">
-    <meta property="og:image" content="https://tasdeem.com/logo.plumbackground.png">
+    <!-- Open Graph / LinkedIn & WhatsApp Thumbnail -->
+    <meta property="og:title" content="TASDEEM">
+    <meta property="og:description" content="Your compliance claims must survive scrutiny.">
+    <meta property="og:image" content="favicon.png"> 
     <meta property="og:url" content="https://tasdeem.com">
     <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
 
-    <!-- Umami Analytics -->
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="e451d097-cbb4-4a7e-8be5-d6eaaf1a5d76"></script>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style>
-        :root {
-            --bg-dark: #311929;
-            --surface-dark: #422639;
-            --gold: #D4A017;
-            --gold-light: #E6C587;
-            --grey: #A3939E;
-            --off-white: #FAF6F8;
-            --light-bg: #F6F0F3;
-        }
-        body { font-family: 'Newsreader', serif; background-color: var(--bg-dark); color: #FFFFFF; }
-        .font-mono { font-family: 'DM Mono', monospace; }
-    </style>
+    <!-- Favicon link -->
+    <link rel="icon" href="favicon.png" type="image/png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="selection:bg-[#D4A017] selection:text-[#311929]">
-
-    <!-- NAV -->
-    <nav class="fixed top-0 left-0 w-full h-[80px] bg-[#311929]/95 backdrop-blur-md z-50 border-b border-[#D4A017]/10 flex items-center justify-between px-6 md:px-12">
-        <div class="flex items-center gap-4">
-            <!-- Replaced full logo with the high-res favicon -->
-            <img src="apple-touch-icon.png?v=2" alt="Tasdeem Icon" class="h-10 w-auto object-contain">
-            <div class="flex flex-col">
-                <span class="font-mono text-sm font-bold tracking-wider text-white">TASDEEM</span>
-                <span class="font-mono text-[10px] text-[#A3939E]">Advisory · تسديم للاستشارات</span>
-            </div>
-        </div>
-        <div class="hidden md:flex items-center space-x-8 font-mono text-xs text-[#A3939E]">
-            <a href="#problem" class="hover:text-white transition">Problem</a>
-            <a href="#sprint" class="hover:text-white transition">The Engagement</a>
-            <a href="#why" class="hover:text-white transition">Why Tasdeem</a>
-        </div>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased flex flex-col min-h-screen">
+    
+    <!-- Navigation -->
+    <nav class="container mx-auto px-6 py-6 flex justify-between items-center">
+        <a href="#">
+            <img src="favicon.png" alt="Tasdeem Icon" class="h-10 w-auto object-contain">
+        </a>
+        <a href="mailto:info@tasdeem.com" class="text-sm font-semibold text-gray-600 hover:text-gray-900 transition">
+            Contact Us
+        </a>
     </nav>
 
-    <!-- SECTION 1: HERO -->
-    <section class="relative pt-32 pb-20 px-6 md:px-12 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
-        <div class="absolute inset-0 right-0 w-2/3 opacity-10 pointer-events-none hidden lg:block">
-            <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none" stroke="#D4A017" stroke-width="0.3" fill="none">
-                <path d="M10,10 L30,10 L30,40 L60,40 L60,70 L90,70" />
-                <circle cx="30" cy="10" r="1" fill="#D4A017"/>
-                <circle cx="60" cy="40" r="1" fill="#D4A017"/>
-                <circle cx="90" cy="70" r="1" fill="#D4A017"/>
-            </svg>
-        </div>
-
-        <!-- Left Column -->
-        <div class="lg:col-span-3 space-y-6 z-10">
-            <div class="font-mono text-[10px] text-[#D4A017] tracking-[0.3em] font-medium uppercase">
-                ESG ASSURANCE & SUSTAINABILITY ADVISORY · UAE
-            </div>
-            <h1 class="text-5xl md:text-6xl lg:text-7xl font-light leading-tight text-white">
-                ESG software gives you a dashboard.<br>I build what makes it <span class="italic text-[#E6C587]">defensible.</span>
-            </h1>
-            <p class="text-[#A3939E] text-lg max-w-xl font-normal leading-relaxed">
-                Every serious sustainability programme today runs on data platforms, carbon trackers, and reporting tools. The software is not the problem. The problem is what sits behind it, or doesn’t. As an active global ESG auditor who has verified 41 companies across 14 industries, I help UAE businesses build the operational architecture that holds up when someone qualified looks underneath it.
-            </p>
+    <!-- Main Content -->
+    <!-- Changed items-center to items-start so tops align perfectly -->
+    <main class="container mx-auto px-6 flex-grow flex items-start py-12 md:py-24">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-start w-full">
             
-            <!-- Stats -->
-            <div class="grid grid-cols-3 gap-4 pt-4 max-w-md">
-                <div class="border-l border-[#D4A017] pl-4">
-                    <div class="text-3xl font-light text-white">41</div>
-                    <div class="font-mono text-[9px] text-[#D4A017] uppercase tracking-wider">Companies Audited</div>
-                </div>
-                <div class="border-l border-[#D4A017] pl-4">
-                    <div class="text-3xl font-light text-white">14</div>
-                    <div class="font-mono text-[9px] text-[#D4A017] uppercase tracking-wider">Industries</div>
-                </div>
-                <div class="border-l border-[#D4A017] pl-4">
-                    <div class="text-3xl font-light text-white">11</div>
-                    <div class="font-mono text-[9px] text-[#D4A017] uppercase tracking-wider">Countries</div>
-                </div>
-            </div>
-
-            <div class="pt-6">
-                <a href="mailto:info@tasdeem.com?subject=Scoping%20Call%20Inquiry%20-%20Tasdeem%20Advisory" class="inline-block bg-[#D4A017] text-[#311929] font-mono text-xs uppercase tracking-wider px-8 py-4 font-semibold hover:bg-[#E6C587] transition-all duration-300 shadow-lg">
-                    Request a Scoping Call
-                </a>
-            </div>
-        </div>
-
-        <!-- Right Column -->
-        <div class="lg:col-span-2 z-10 flex flex-col">
-            <!-- Main logo positioned directly above the testimonial box -->
-            <img src="logo.png" alt="Tasdeem Logo" class="h-20 md:h-24 w-auto object-contain mb-8 self-start">
-            
-            <div class="bg-[#422639] border border-[#D4A017]/20 p-8 md:p-12 relative rounded-sm shadow-xl">
-                <div class="w-[60px] h-[3px] bg-[#D4A017] absolute top-0 left-12"></div>
-                <p class="text-xl text-white/80 italic leading-relaxed mb-6">
-                    "Most companies do good things they can’t prove. A few prove things they never did. Both fail under regulatory scrutiny."
+            <!-- Left Column: Copy & Call to Action -->
+            <div class="pt-2"> <!-- Slight padding to visually match the text cap-height with the image top -->
+                <h1 class="text-4xl md:text-5xl lg:text-[3.25rem] font-bold leading-tight mb-6 text-gray-900">
+                    ESG software gives you a dashboard.<br>
+                    <span class="text-blue-800">I build what makes it.</span>
+                </h1>
+                
+                <p class="text-xl font-medium text-gray-900 mb-2">
+                    Your compliance claims must survive scrutiny.
                 </p>
-                <div class="w-8 h-[1px] bg-[#E6C587] mb-4"></div>
-                <div class="font-mono text-xs text-[#A3939E] space-y-1">
-                    <div class="text-white font-medium">Hashim Mohamed</div>
-                    <div>Active Global ESG Auditor · GRI Certified · B Lab Verification Analyst</div>
-                </div>
+                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                    Clarity in complexity. Impact that endures.
+                </p>
+                
+                <a href="mailto:info@tasdeem.com" class="inline-block bg-blue-800 text-white font-semibold px-8 py-3 rounded-md hover:bg-blue-900 transition shadow-md hover:shadow-lg mt-2">
+                    Get in Touch
+                </a>
             </div>
-        </div>
-    </section>
 
-    <!-- REGULATION STRIP -->
-    <div class="w-full bg-[#422639] border-t-2 border-[#D4A017] py-4 px-6 md:px-12 flex flex-col sm:flex-row justify-between items-center gap-4 z-20 relative">
-        <div class="font-mono text-xs text-white/75 text-center sm:text-left">
-            Federal Decree-Law No. 11 makes UAE GHG reporting mandatory for all entities by May 2026. The B Corp v2 standard is simultaneously rewriting global certification requirements. We build frameworks designed to satisfy both.
-        </div>
-        <div class="font-mono text-[9px] text-[#D4A017] border border-[#D4A017] px-2 py-1 uppercase tracking-widest whitespace-nowrap">
-            LOCAL MANDATES · GLOBAL STANDARDS
-        </div>
-    </div>
-
-    <!-- SECTION 2: PROBLEM -->
-    <section id="problem" class="bg-[#FAF6F8] text-[#311929] py-20 px-6 md:px-12">
-        <div class="max-w-7xl mx-auto">
-            <div class="font-mono text-[9px] text-[#D4A017] tracking-[0.3em] uppercase font-bold mb-2">THE PROBLEM</div>
-            <h2 class="text-4xl md:text-5xl font-light text-[#311929] mb-12">
-                The data exists. The <span class="italic text-[#D4A017]">architecture behind it</span> usually doesn’t.
-            </h2>
+            <!-- Right Column: Cropped Logo & Testimonial -->
+            <div class="flex flex-col items-start w-full">
+                
+                <!-- Main Logo: Sizing increased, padding removed for top alignment -->
+                <img src="logo.png" alt="Tasdeem Logo" class="w-full max-w-[16rem] md:max-w-sm lg:max-w-md h-auto object-contain mb-10">
+                
+                <!-- Testimonial Box -->
+                <blockquote class="border-l-4 border-blue-800 pl-5 pr-4 py-4 italic text-gray-600 bg-white rounded-r-md shadow-sm border-y border-r border-gray-100 w-full">
+                    "Tasdeem brought unparalleled clarity to our operations. Their guidance transformed our complexity into a clear roadmap for enduring impact."
+                </blockquote>
+            </div>
             
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                <!-- Left -->
-                <div class="space-y-6">
-                    <p class="text-lg text-slate-600 font-normal leading-relaxed">
-                        Most organisations have sustainability software running. They have dashboards, emission figures, and supplier questionnaires. What they rarely have is the operational evidence that makes those numbers defensible when a real auditor, a procurement team, or a regulator looks underneath them.
-                    </p>
-                    <ul class="space-y-3 font-mono text-xs text-slate-700">
-                        <li class="flex items-center gap-3">
-                            <span class="text-red-700 text-base">✕</span> Dashboards built on assumptions rather than verified data.
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <span class="text-red-700 text-base">✕</span> Emissions figures that do not survive a structural audit.
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <span class="text-red-700 text-base">✕</span> Policies that exist on paper but have no operational workflows behind them.
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <span class="text-red-700 text-base">✕</span> Claims that looked credible internally and collapsed under a 20-minute external review.
-                        </li>
-                    </ul>
-                </div>
-                <!-- Right -->
-                <div class="bg-[#311929] text-white p-8 border-l-4 border-[#D4A017] shadow-md">
-                    <p class="italic text-lg text-white/80 mb-4">
-                        "A UAE contractor shared their sustainability strategy with me. Within 20 minutes I found no board engagement, no materiality process, no data collection system, and KPIs with no baseline. They thought they were ahead of the market. They were starting from zero."
-                    </p>
-                    <div class="font-mono text-xs text-[#D4A017]">Real verification scenario, 2024</div>
-                </div>
-            </div>
         </div>
-    </section>
-
-    <!-- SECTION 3: THE ENGAGEMENT -->
-    <section id="sprint" class="bg-[#F6F0F3] text-[#311929] py-20 px-6 md:px-12">
-        <div class="max-w-7xl mx-auto">
-            <div class="font-mono text-xs text-[#D4A017] tracking-widest uppercase mb-2">THE ENGAGEMENT</div>
-            <h2 class="text-4xl md:text-5xl font-light mb-8">You get the answers to the test from the person who grades the exams.</h2>
-            <p class="text-lg text-slate-600 mb-16 max-w-4xl leading-relaxed">
-                Whether you are navigating UAE federal GHG mandates, pursuing B Corp certification, building your first ESG reporting framework, or preparing for European supply chain due diligence, the requirement is the same. Claims must be operationally grounded. Evidence must be verifiable. The structure must hold up when someone qualified reviews it. That is what I build.
-            </p>
-
-            <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
-                <!-- Left: 3 Steps -->
-                <div class="lg:col-span-3 space-y-8">
-                    <div class="border-b border-slate-300/60 pb-6 flex gap-6">
-                        <div class="text-4xl font-light text-[#311929]/20 font-mono">01</div>
-                        <div>
-                            <h4 class="font-mono text-xs uppercase font-bold mb-1 text-[#311929]">Scoping and Evidence Mapping</h4>
-                            <p class="text-sm text-slate-600">I map your operational boundaries, stress-test your existing claims against real data, and identify exactly where the gaps are before an external party does.</p>
-                        </div>
-                    </div>
-                    <div class="border-b border-slate-300/60 pb-6 flex gap-6">
-                        <div class="text-4xl font-light text-[#311929]/20 font-mono">02</div>
-                        <div>
-                            <h4 class="font-mono text-xs uppercase font-bold mb-1 text-[#311929]">Architecture and Remediation</h4>
-                            <p class="text-sm text-slate-600">I build the KPI framework, data collection system, policy foundations, and reporting structure that turns your sustainability effort from intention into evidence.</p>
-                        </div>
-                    </div>
-                    <div class="border-b border-slate-300/60 pb-6 flex gap-6">
-                        <div class="text-4xl font-light text-[#311929]/20 font-mono">03</div>
-                        <div>
-                            <h4 class="font-mono text-xs uppercase font-bold mb-1 text-[#311929]">Executive Blueprint</h4>
-                            <p class="text-sm text-slate-600">A clear, actionable output your leadership can implement and your auditors can verify. Not a report. A system.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right: Sticky Package Card -->
-                <div class="lg:col-span-2 lg:sticky lg:top-24 bg-[#311929] text-white p-8 rounded-sm shadow-xl border border-[#D4A017]/10">
-                    <div class="font-mono text-[10px] text-[#D4A017] tracking-widest mb-2">ENGAGEMENT SCOPE</div>
-                    <h3 class="text-2xl font-light mb-6">4 to 8 Week Sprints</h3>
-                    <p class="text-sm text-[#A3939E] mb-8 leading-relaxed">
-                        Sprints begin at AED 15,000 and typically run 4 to 8 weeks depending on scope, sector, and certification pathway.
-                    </p>
-                    <div class="mb-8">
-                        <span class="text-xl font-light tracking-tight text-white border-b border-[#D4A017] pb-1">Pricing Available on Request</span>
-                    </div>
-                    <a href="mailto:info@tasdeem.com?subject=Engagement%20Inquiry%20-%20Tasdeem%20Advisory" class="block w-full bg-[#D4A017] text-[#311929] font-mono text-center text-xs uppercase font-bold py-4 hover:bg-[#E6C587] transition shadow-md">
-                        Email for Availability
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 4: WHY TASDEEM -->
-    <section id="why" class="bg-[#311929] text-white py-20 px-6 md:px-12 border-t border-[#D4A017]/10">
-        <div class="max-w-7xl mx-auto">
-            <div class="font-mono text-xs text-[#D4A017] tracking-widest uppercase mb-2">WHY TASDEEM</div>
-            <h2 class="text-4xl md:text-5xl font-light mb-12">The auditor’s advantage.</h2>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Card 1 -->
-                <div class="bg-[#422639] border border-[#D4A017]/10 p-6 space-y-4 hover:border-[#D4A017]/40 transition group rounded-sm">
-                    <div class="text-[#D4A017] text-2xl">🔍</div>
-                    <h4 class="font-mono text-xs uppercase text-[#E6C587]">I Know What Fails</h4>
-                    <p class="text-sm text-[#A3939E]">I evaluate ESG frameworks globally across 14 industries. I know exactly what triggers audit failure under current and incoming standards, and how to close those gaps before they cost you a certification or a contract.</p>
-                </div>
-                <!-- Card 2 -->
-                <div class="bg-[#422639] border border-[#D4A017]/10 p-6 space-y-4 hover:border-[#D4A017]/40 transition group rounded-sm">
-                    <div class="text-[#D4A017] text-2xl">⚙️</div>
-                    <h4 class="font-mono text-xs uppercase text-[#E6C587]">I Know What Real Looks Like</h4>
-                    <p class="text-sm text-[#A3939E]">I spent years inside physical environmental operations before moving into assurance. I can tell the difference between a number that reflects reality and one that was generated by a formula.</p>
-                </div>
-                <!-- Card 3 -->
-                <div class="bg-[#422639] border border-[#D4A017]/10 p-6 space-y-4 hover:border-[#D4A017]/40 transition group rounded-sm">
-                    <div class="text-[#D4A017] text-2xl">🌐</div>
-                    <h4 class="font-mono text-xs uppercase text-[#E6C587]">Global Standards, Local Reality</h4>
-                    <p class="text-sm text-[#A3939E]">Arabic-speaking and UAE-based, with credentials and auditing experience that match international ESG requirements. I bridge the gap between global demands and local business assumptions.</p>
-                </div>
-                <!-- Card 4 -->
-                <div class="bg-[#422639] border border-[#D4A017]/10 p-6 space-y-4 hover:border-[#D4A017]/40 transition group rounded-sm">
-                    <div class="text-[#D4A017] text-2xl">🛡️</div>
-                    <h4 class="font-mono text-xs uppercase text-[#E6C587]">I Build to the Rubric</h4>
-                    <p class="text-sm text-[#A3939E]">I operate under strict conflict-of-interest standards. What I build for clients is structured against the exact rigorous frameworks I use when I audit. There is no guesswork.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 5: FOR WHO -->
-    <section class="bg-white text-[#311929] py-20 px-6 md:px-12">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
-                <h2 class="text-3xl md:text-4xl font-light mb-8 text-[#311929]">For companies where sustainability is already real, and needs to be provable.</h2>
-                <div class="space-y-6">
-                    <div>
-                        <h4 class="font-mono text-xs uppercase font-bold text-slate-800">[✓] Strategic Alignment</h4>
-                        <p class="text-sm text-slate-500 font-serif mt-1">Leaders preparing for UAE federal GHG mandates, B Corp certification, or European supply chain requirements.</p>
-                    </div>
-                    <div>
-                        <h4 class="font-mono text-xs uppercase font-bold text-slate-800">[✓] Readiness for Rigor</h4>
-                        <p class="text-sm text-slate-500 font-serif mt-1">Companies running sustainability programmes that have never been stress-tested by an external auditor.</p>
-                    </div>
-                    <div>
-                        <h4 class="font-mono text-xs uppercase font-bold text-slate-800">[✓] Structural Ambition</h4>
-                        <p class="text-sm text-slate-500 font-serif mt-1">Businesses that understand the critical difference between a visual dashboard and a defensible operational framework.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="space-y-8">
-                <div class="border-l-4 border-red-700 bg-red-50 p-6">
-                    <h4 class="font-mono text-xs uppercase font-bold text-red-800 mb-3">This is not for you if:</h4>
-                    <ul class="space-y-2 text-xs font-mono text-slate-600">
-                        <li>✕ You need a marketing badge with nothing behind it.</li>
-                        <li>✕ Leadership is not part of the reporting process.</li>
-                        <li>✕ You expect results without opening your operational data.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 6: CTA / CONTACT -->
-    <section id="contact" class="bg-[#311929] relative py-20 px-6 text-center border-t border-[#D4A017]/10">
-        <div class="max-w-3xl mx-auto space-y-6 relative z-10">
-            <!-- NEW TAGLINE ADDED HERE -->
-            <div class="font-mono text-[10px] text-[#D4A017] tracking-[0.3em] uppercase mb-2">
-                Clarity in complexity. Impact that endures.
-            </div>
-            <h2 class="text-4xl md:text-6xl font-light text-white leading-tight">
-                Your compliance claims must <span class="italic text-[#E6C587]">survive scrutiny.</span>
-            </h2>
-            <p class="text-sm md:text-base text-[#A3939E] font-normal max-w-xl mx-auto">
-                Reach out to discuss your current architecture and compliance timeline. If there is a fit, we will arrange a formal scoping session.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4 font-mono text-xs uppercase tracking-wider">
-                <a href="mailto:info@tasdeem.com?subject=Scoping%20Call%20Inquiry%20-%20Tasdeem%20Advisory" class="bg-[#D4A017] text-[#311929] px-8 py-4 font-bold hover:bg-[#E6C587] transition shadow-md">
-                    Email for Availability
-                </a>
-                <a href="https://linkedin.com/in/HashimMohd" target="_blank" class="border border-white/20 text-white px-8 py-4 hover:bg-white/5 transition">
-                    Connect on LinkedIn
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="bg-[#422639] border-t border-[#D4A017]/10 py-12 px-6 md:px-12 text-[#A3939E] font-mono text-[11px]">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
-            <div>
-                <span class="text-white font-bold">TASDEEM ADVISORY</span><br>© 2026 All rights reserved.
-            </div>
-            <div class="flex flex-wrap justify-center gap-2 text-[9px] uppercase tracking-wider text-[#E6C587]">
-                <span>GRI</span> · <span>SEA</span> · <span>LEED GA</span> · <span>B LAB GLOBAL</span> · <span>CSRD</span> · <span>TCFD</span> · <span>GHG PROTOCOL</span> · <span>PMP</span>
-            </div>
-            <div class="md:text-right">
-                Abu Dhabi, UAE · <a href="mailto:info@tasdeem.com" class="text-[#D4A017] hover:underline">info@tasdeem.com</a>
-            </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center mt-auto">
+        <div class="container mx-auto px-6">
+            <p class="mb-2 font-medium text-gray-300">Clarity in complexity. Impact that endures.</p>
+            <p class="text-sm">&copy; 2026 TASDEEM. All rights reserved.</p>
         </div>
     </footer>
 
