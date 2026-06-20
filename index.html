@@ -1,82 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TASDEEM | Clarity in complexity. Impact that endures.</title>
+    <title>TASDEEM | ESG Assurance & Sustainability Advisory</title>
     
-    <!-- Open Graph / LinkedIn & WhatsApp Thumbnail -->
-    <meta property="og:title" content="TASDEEM">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=2">
+    <link rel="shortcut icon" href="favicon.ico?v=2">
+
+    <meta property="og:title" content="TASDEEM | ESG Assurance & Sustainability Advisory">
     <meta property="og:description" content="Your compliance claims must survive scrutiny.">
-    <meta property="og:image" content="favicon.png"> 
+    <meta property="og:image" content="https://tasdeem.com/apple-touch-icon.png">
     <meta property="og:url" content="https://tasdeem.com">
     <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
 
-    <!-- Favicon link -->
-    <link rel="icon" href="favicon.png" type="image/png">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="e451d097-cbb4-4a7e-8be5-d6eaaf1a5d76"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        :root {
+            --bg-dark: #311929;
+            --surface-dark: #422639;
+            --gold: #D4A017;
+            --gold-light: #E6C587;
+            --grey: #A3939E;
+            --off-white: #FAF6F8;
+            --light-bg: #F6F0F3;
+        }
+        body { font-family: 'Newsreader', serif; background-color: var(--bg-dark); color: #FFFFFF; }
+        .font-mono { font-family: 'DM Mono', monospace; }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans antialiased flex flex-col min-h-screen">
-    
-    <!-- Navigation -->
-    <nav class="container mx-auto px-6 py-6 flex justify-between items-center">
-        <a href="#">
-            <img src="favicon.png" alt="Tasdeem Icon" class="h-10 w-auto object-contain">
-        </a>
-        <a href="mailto:info@tasdeem.com" class="text-sm font-semibold text-gray-600 hover:text-gray-900 transition">
-            Contact Us
-        </a>
+<body class="selection:bg-[#D4A017] selection:text-[#311929]">
+
+    <nav class="fixed top-0 left-0 w-full h-[80px] bg-[#311929]/95 backdrop-blur-md z-50 border-b border-[#D4A017]/10 flex items-center justify-between px-6 md:px-12">
+        <div class="flex items-center gap-4">
+            <img src="apple-touch-icon.png?v=2" alt="Tasdeem Icon" class="h-10 w-auto object-contain">
+            <div class="flex flex-col">
+                <span class="font-mono text-sm font-bold tracking-wider text-white">TASDEEM</span>
+                <span class="font-mono text-[10px] text-[#A3939E]">Advisory · تسديم للاستشارات</span>
+            </div>
+        </div>
+        <div class="hidden md:flex items-center space-x-8 font-mono text-xs text-[#A3939E]">
+            <a href="#problem" class="hover:text-white transition">Problem</a>
+            <a href="#sprint" class="hover:text-white transition">The Engagement</a>
+            <a href="#why" class="hover:text-white transition">Why Tasdeem</a>
+        </div>
     </nav>
 
-    <!-- Main Content -->
-    <!-- Changed items-center to items-start so tops align perfectly -->
-    <main class="container mx-auto px-6 flex-grow flex items-start py-12 md:py-24">
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-start w-full">
+    <section class="relative pt-32 pb-20 px-6 md:px-12 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
+        <div class="absolute inset-0 right-0 w-2/3 opacity-10 pointer-events-none hidden lg:block">
+            <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none" stroke="#D4A017" stroke-width="0.3" fill="none">
+                <path d="M10,10 L30,10 L30,40 L60,40 L60,70 L90,70" />
+                <circle cx="30" cy="10" r="1" fill="#D4A017"/>
+                <circle cx="60" cy="40" r="1" fill="#D4A017"/>
+                <circle cx="90" cy="70" r="1" fill="#D4A017"/>
+            </svg>
+        </div>
+
+        <div class="lg:col-span-3 space-y-6 z-10 pt-2">
+            <div class="font-mono text-[10px] text-[#D4A017] tracking-[0.3em] font-medium uppercase">
+                ESG ASSURANCE & SUSTAINABILITY ADVISORY · UAE
+            </div>
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-light leading-tight text-white">
+                ESG software gives you a dashboard.<br>I build what makes it <span class="italic text-[#E6C587]">defensible.</span>
+            </h1>
+            <p class="text-[#A3939E] text-lg max-w-xl font-normal leading-relaxed">
+                Every serious sustainability programme today runs on data platforms, carbon trackers, and reporting tools. The software is not the problem. The problem is what sits behind it, or doesn’t. As an active global ESG auditor who has verified 41 companies across 14 industries, I help UAE businesses build the operational architecture that holds up when someone qualified looks underneath it.
+            </p>
             
-            <!-- Left Column: Copy & Call to Action -->
-            <div class="pt-2"> <!-- Slight padding to visually match the text cap-height with the image top -->
-                <h1 class="text-4xl md:text-5xl lg:text-[3.25rem] font-bold leading-tight mb-6 text-gray-900">
-                    ESG software gives you a dashboard.<br>
-                    <span class="text-blue-800">I build what makes it.</span>
-                </h1>
-                
-                <p class="text-xl font-medium text-gray-900 mb-2">
-                    Your compliance claims must survive scrutiny.
-                </p>
-                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-                    Clarity in complexity. Impact that endures.
-                </p>
-                
-                <a href="mailto:info@tasdeem.com" class="inline-block bg-blue-800 text-white font-semibold px-8 py-3 rounded-md hover:bg-blue-900 transition shadow-md hover:shadow-lg mt-2">
-                    Get in Touch
+            <div class="grid grid-cols-3 gap-4 pt-4 max-w-md">
+                <div class="border-l border-[#D4A017] pl-4">
+                    <div class="text-3xl font-light text-white">41</div>
+                    <div class="font-mono text-[9px] text-[#D4A017] uppercase tracking-wider">Companies Audited</div>
+                </div>
+                <div class="border-l border-[#D4A017] pl-4">
+                    <div class="text-3xl font-light text-white">14</div>
+                    <div class="font-mono text-[9px] text-[#D4A017] uppercase tracking-wider">Industries</div>
+                </div>
+                <div class="border-l border-[#D4A017] pl-4">
+                    <div class="text-3xl font-light text-white">11</div>
+                    <div class="font-mono text-[9px] text-[#D4A017] uppercase tracking-wider">Countries</div>
+                </div>
+            </div>
+
+            <div class="pt-6">
+                <a href="mailto:info@tasdeem.com?subject=Scoping%20Call%20Inquiry%20-%20Tasdeem%20Advisory" class="inline-block bg-[#D4A017] text-[#311929] font-mono text-xs uppercase tracking-wider px-8 py-4 font-semibold hover:bg-[#E6C587] transition-all duration-300 shadow-lg">
+                    Request a Scoping Call
                 </a>
             </div>
-
-            <!-- Right Column: Cropped Logo & Testimonial -->
-            <div class="flex flex-col items-start w-full">
-                
-                <!-- Main Logo: Sizing increased, padding removed for top alignment -->
-                <img src="logo.png" alt="Tasdeem Logo" class="w-full max-w-[16rem] md:max-w-sm lg:max-w-md h-auto object-contain mb-10">
-                
-                <!-- Testimonial Box -->
-                <blockquote class="border-l-4 border-blue-800 pl-5 pr-4 py-4 italic text-gray-600 bg-white rounded-r-md shadow-sm border-y border-r border-gray-100 w-full">
-                    "Tasdeem brought unparalleled clarity to our operations. Their guidance transformed our complexity into a clear roadmap for enduring impact."
-                </blockquote>
-            </div>
-            
         </div>
-    </main>
-    
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-8 text-center mt-auto">
-        <div class="container mx-auto px-6">
-            <p class="mb-2 font-medium text-gray-300">Clarity in complexity. Impact that endures.</p>
-            <p class="text-sm">&copy; 2026 TASDEEM. All rights reserved.</p>
-        </div>
-    </footer>
 
-</body>
-</html>
+        <div class="lg:col-span-2 z-10 flex flex-col items-start w-full">
+            <img src="logo.png" alt="Tasdeem Logo" class="w-full max-w-[16rem] md:max-w-sm h-auto object-contain mb-
