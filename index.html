@@ -31,8 +31,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Styles (compiled Tailwind, no external script) -->
+    <link rel="stylesheet" href="styles.css?v=1">
 
     <style>
         :root {
@@ -230,7 +230,7 @@
                         <span class="text-xl font-light tracking-tight text-white border-b border-[#D4A017] pb-1">Scoping by Appointment</span>
                     </div>
                     <button type="button" data-subject="Engagement Inquiry - Tasdeem Advisory" class="contact-trigger block w-full bg-[#D4A017] text-[#311929] font-mono text-center text-xs uppercase font-bold py-4 hover:bg-[#E6C587] transition shadow-md cursor-pointer">
-                        Email for Availability
+                        Get in Touch
                     </button>
                 </div>
             </div>
@@ -291,7 +291,7 @@
                 <div class="bg-[#422639] border border-[#D4A017]/10 p-6 space-y-4 hover:border-[#D4A017]/40 transition group rounded-sm">
                     <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>
                     <h4 class="font-mono text-xs uppercase text-[#E6C587]">Global Standards, Regional Fluency</h4>
-                    <p class="text-sm text-[#A3939E]">Bilingual (Arabic/English) and UAE-based, connecting international frameworks (B Lab Standards, GRI, ISSB, GHG Protocol, TCFD, TNFD) with Gulf regulatory realities.</p>
+                    <p class="text-sm text-[#A3939E]">Bilingual (Arabic/English) and UAE-based, connecting international frameworks (B Lab Standards, GRI, ISSB, SASB, GHG Protocol, TCFD, TNFD) with Gulf regulatory realities.</p>
                 </div>
                 <div class="bg-[#422639] border border-[#D4A017]/10 p-6 space-y-4 hover:border-[#D4A017]/40 transition group rounded-sm">
                     <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg>
@@ -345,13 +345,52 @@
                 Clarity in complexity. <span class="italic text-[#E6C587]">Impact that endures.</span>
             </h2>
             <p class="text-sm md:text-base text-[#A3939E] font-normal max-w-xl mx-auto">
-                Get in touch about your current data, reporting timeline or training needs. If there is a fit, we will arrange a scoping session.
+                Tell us about your current data, reporting timeline or training needs. We reply within five business days, and if there is a fit, we will arrange a scoping session.
             </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4 font-mono text-xs uppercase tracking-wider">
-                <button type="button" data-subject="Scoping Call Inquiry - Tasdeem Advisory" class="contact-trigger bg-[#D4A017] text-[#311929] px-8 py-4 font-bold hover:bg-[#E6C587] transition shadow-md cursor-pointer">
-                    Email for Availability
+
+            <form id="contact-form" class="text-left bg-[#422639] border border-[#D4A017]/20 p-6 md:p-10 rounded-sm space-y-5 mt-8" novalidate>
+                <input type="hidden" name="access_key" value="43b78836-9e98-42f3-9da4-7819bf159e1a">
+                <input type="hidden" name="subject" value="New enquiry - Tasdeem website">
+                <input type="hidden" name="from_name" value="Tasdeem Website">
+                <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off">
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <label class="block">
+                        <span class="font-mono text-[10px] uppercase tracking-widest text-[#E6C587]">Name *</span>
+                        <input name="name" type="text" required autocomplete="name" class="mt-2 w-full bg-[#311929] border border-white/15 focus:border-[#D4A017] outline-none px-4 py-3 text-white text-base rounded-sm">
+                    </label>
+                    <label class="block">
+                        <span class="font-mono text-[10px] uppercase tracking-widest text-[#E6C587]">Work email *</span>
+                        <input name="email" type="email" required autocomplete="email" class="mt-2 w-full bg-[#311929] border border-white/15 focus:border-[#D4A017] outline-none px-4 py-3 text-white text-base rounded-sm">
+                    </label>
+                    <label class="block">
+                        <span class="font-mono text-[10px] uppercase tracking-widest text-[#E6C587]">Organisation</span>
+                        <input name="organisation" type="text" autocomplete="organization" class="mt-2 w-full bg-[#311929] border border-white/15 focus:border-[#D4A017] outline-none px-4 py-3 text-white text-base rounded-sm">
+                    </label>
+                    <label class="block">
+                        <span class="font-mono text-[10px] uppercase tracking-widest text-[#E6C587]">Topic *</span>
+                        <select id="topic" name="topic" required class="mt-2 w-full bg-[#311929] border border-white/15 focus:border-[#D4A017] outline-none px-4 py-3 text-white text-base rounded-sm">
+                            <option>Sustainability strategy & advisory</option>
+                            <option>B Corp certification readiness</option>
+                            <option>GHG inventory & verification readiness</option>
+                            <option>ESG reporting (GRI, ISSB, SASB)</option>
+                            <option>Training & capacity building</option>
+                            <option>Other</option>
+                        </select>
+                    </label>
+                </div>
+                <label class="block">
+                    <span class="font-mono text-[10px] uppercase tracking-widest text-[#E6C587]">What do you need? *</span>
+                    <textarea name="message" rows="5" required class="mt-2 w-full bg-[#311929] border border-white/15 focus:border-[#D4A017] outline-none px-4 py-3 text-white text-base rounded-sm" placeholder="A few lines on where you are now and your timeline."></textarea>
+                </label>
+                <button type="submit" id="form-submit" class="w-full bg-[#D4A017] text-[#311929] font-mono text-xs uppercase tracking-wider px-8 py-4 font-bold hover:bg-[#E6C587] transition shadow-md cursor-pointer disabled:opacity-60">
+                    Send Enquiry
                 </button>
-                <a href="https://linkedin.com/in/HashimMohd" target="_blank" rel="noopener noreferrer" class="border border-white/20 text-white px-8 py-4 hover:bg-white/5 transition">
+                <p id="form-status" class="font-mono text-xs text-center min-h-[1rem]" role="status" aria-live="polite"></p>
+            </form>
+
+            <div class="pt-2 font-mono text-xs uppercase tracking-wider">
+                <a href="https://linkedin.com/in/HashimMohd" target="_blank" rel="noopener noreferrer" class="inline-block border border-white/20 text-white px-8 py-4 hover:bg-white/5 transition">
                     Connect on LinkedIn
                 </a>
             </div>
@@ -365,24 +404,64 @@
                 <span class="text-white font-bold">TASDEEM ADVISORY</span><br>© 2026 All rights reserved.
             </div>
             <div class="flex flex-wrap justify-center gap-2 text-[9px] uppercase tracking-wider text-[#E6C587]">
-                <span>B Lab</span> · <span>GRI</span> · <span>ISSB</span> · <span>GHG Protocol</span> · <span>ISO 14064</span> · <span>TCFD</span> · <span>TNFD</span> · <span>CDP</span> · <span>ESRS</span>
+                <span>B Lab</span> · <span>GRI</span> · <span>ISSB</span> · <span>SASB</span> · <span>GHG Protocol</span> · <span>ISO 14064</span> · <span>TCFD</span> · <span>TNFD</span> · <span>CDP</span> · <span>ESRS</span>
             </div>
             <div class="md:text-right">
-                Abu Dhabi, UAE · <button type="button" data-subject="General Inquiry - Tasdeem Advisory" class="contact-trigger text-[#D4A017] hover:underline cursor-pointer">info&#64;tasdeem&#46;com</button>
+                Abu Dhabi, UAE · <span class="text-[#D4A017] select-all">info&#64;tasdeem&#46;com</span>
             </div>
         </div>
     </footer>
 
-    <!-- Anti-Scraping Mailto Handler -->
+    <!-- Contact: buttons scroll to the form; form posts to Web3Forms -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const user = 'info';
-            const domain = 'tasdeem.com';
+            const topic = document.getElementById('topic');
             document.querySelectorAll('.contact-trigger').forEach(btn => {
                 btn.addEventListener('click', () => {
-                    const subject = encodeURIComponent(btn.getAttribute('data-subject') || 'Tasdeem Advisory Inquiry');
-                    window.location.href = `mailto:${user}@${domain}?subject=${subject}`;
+                    const subj = btn.getAttribute('data-subject') || '';
+                    if (topic && /training/i.test(subj)) topic.value = 'Training & capacity building';
+                    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+                    setTimeout(() => { const n = document.querySelector('#contact-form input[name="name"]'); if (n) n.focus({ preventScroll: true }); }, 600);
                 });
+            });
+
+            const form = document.getElementById('contact-form');
+            const status = document.getElementById('form-status');
+            const submit = document.getElementById('form-submit');
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                if (!form.checkValidity()) {
+                    status.textContent = 'Please fill in your name, a valid email and your message.';
+                    status.className = 'font-mono text-xs text-center min-h-[1rem] text-[#E6C587]';
+                    form.reportValidity();
+                    return;
+                }
+                submit.disabled = true;
+                submit.textContent = 'Sending...';
+                status.textContent = '';
+                try {
+                    const data = Object.fromEntries(new FormData(form));
+                    data.subject = 'New enquiry - ' + data.topic + ' - Tasdeem website';
+                    const res = await fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                        body: JSON.stringify(data)
+                    });
+                    const json = await res.json();
+                    if (json.success) {
+                        form.reset();
+                        status.textContent = 'Thank you. Your enquiry has been sent, and we will reply within five business days.';
+                        status.className = 'font-mono text-xs text-center min-h-[1rem] text-[#E6C587]';
+                    } else {
+                        throw new Error(json.message || 'Send failed');
+                    }
+                } catch (err) {
+                    status.textContent = 'Something went wrong. Please email info@tasdeem.com directly.';
+                    status.className = 'font-mono text-xs text-center min-h-[1rem] text-red-300';
+                } finally {
+                    submit.disabled = false;
+                    submit.textContent = 'Send Enquiry';
+                }
             });
         });
     </script>
